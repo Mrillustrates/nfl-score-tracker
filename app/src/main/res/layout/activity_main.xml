@@ -1,0 +1,172 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1c07db"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:padding="16dp"
+                android:text="Los Angeles Rams"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/team_rams_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1c07db"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:paddingBottom="24dp"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:textSize="56sp"
+
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:onClick="scoreTouchdownRams"
+                android:text="Touchdown!" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:onClick="scoreFieldGoalRams"
+                android:text="Field Goal" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:onClick="scoreTwoPointsRams"
+                android:text="2 PT" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:onClick="scoreXtraPointRams"
+                android:text="XP" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="16dp"
+            android:background="#1c07db" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#e60909"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:padding="16dp"
+                android:text="San Fransciso 49ERS"
+                android:textColor="#f7e40c"
+                android:textSize="14sp"
+
+                />
+
+            <TextView
+                android:id="@+id/team_niners_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#e60909"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:paddingBottom="24dp"
+                android:text="0"
+                android:textColor="#f7e40c"
+                android:textSize="56sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:onClick="scoreTouchdownNiners"
+                android:text="Touchdown!" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:onClick="scoreFieldGoalNiners"
+                android:text="Field Goal" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:onClick="scoreTwoPointsNiners"
+                android:text="2 PT" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:onClick="scoreXtraPointNiners"
+                android:text="XP" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:onClick="resetScore"
+        android:text="Reset" />
+</RelativeLayout>
