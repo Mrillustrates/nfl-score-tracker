@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         scoreRams = scoreRams + 7;
         displayForRams(scoreRams);
     }
-    // This method increments score by 3 when the Rams score a Field Goal
+    // This method increments score by 3 when the Rams score a Field Goal!
     public void scoreFieldGoalRams(View view){
         scoreRams= scoreRams + 3;
         displayForRams(scoreRams);
